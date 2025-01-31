@@ -1,0 +1,541 @@
+/*------------------------------------------INDEX.PHP-----------------------------------------------------------*/
+/*------------------------------------------FONTE DO SITE-----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* Aplique a fonte Comfortaa à navbar */
+.navbar, .navbar a, .navbar li {
+    font-family: 'Comfortaa', sans-serif;
+    color: #58867e;
+    font-size: 15px;
+}
+
+
+/* Aplica a fonte também nas tabelas */
+table, th, td {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+label, input, button {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+}
+
+/*------------------------------------------LOGO DO SITE-----------------------------------------------------------*/
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinha logo e texto verticalmente no centro */
+}
+
+.slogan {
+    font-size: 12px; /* Tamanho da frase principal */
+    color: #58867e; /* Cor do texto */
+    margin-left: 10px; /* Espaço entre a logo e as frases */
+}
+
+.slogan span {
+    display: block; /* Faz com que as frases fiquem em blocos separados */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    color: #58867e;
+}
+
+.slogan .highlight {
+    font-size: 10px; /* Tamanho da frase principal */
+    color: #58867e; /* Cor do texto */
+}
+
+/*----------------------------------------BARRA DE NAVEGAÇÃO-------------------------------------------------------*/
+/* Estilo padrão dos links na navbar */
+.navbar a {
+    font-family: 'Comfortaa', sans-serif;
+    color: #58867e; /* Cor padrão do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 15px;
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Estilo ao passar o mouse (hover) */
+.navbar a:hover {
+    color: #20695d !important; /* Cor do texto ao passar o mouse */
+}
+
+/* Certifique-se de que a barra de navegação ocupe toda a largura da tela */
+.navbar {
+    width: 100%;
+    background-color: #fff; /* Cor de fundo branca para a navbar */
+}
+
+/* Flexbox para o menu de navegação e a centralização dos itens */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens de navegação e o formulário de busca */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+/* Centraliza os itens de navegação dentro da navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens de navegação */
+    flex-grow: 1; /* Garante que a lista de navegação ocupe todo o espaço disponível */
+}
+
+/* Espaçamento entre os itens de menu */
+.nav-item {
+    margin: 0 15px; /* Ajuste o valor conforme necessário */
+}
+
+
+/* Estilo para a barra de pesquisa */
+form.d-flex {
+    display: flex;
+    align-items: center; /* Alinha a pesquisa verticalmente */
+}
+
+/* Estilo para a caixa de entrada e botão de pesquisa */
+form.d-flex input.form-control {
+    width: 200px; /* Defina o tamanho desejado para a caixa de pesquisa */
+}
+
+/* Estilo para o botão de pesquisa */
+form.d-flex button.btn {
+    margin-left: 10px; /* Espaçamento entre a caixa de pesquisa e o botão */
+}
+
+/* Define o estilo base para cada item do dropdown */
+.dropdown-item {
+    background-color: #ffffff !important; /* Cor de fundo do item */
+    color: #58867e !important; /* Cor do texto corrigida */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 50px !important; /* Arredonda os cantos */
+    font-size: 13px !important; /* Tamanho da fonte */
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: all 0.3s ease; /* Suaviza as mudanças no hover */
+}
+
+/* Adiciona espaçamento entre os itens */
+.dropdown-item + .dropdown-item {
+    margin-top: 5px;
+}
+
+/*----------------------------------------CAIXA DE PESQUISA-------------------------------------------------------*/
+/* Remove brilho, sombra e contorno do input e do botão */
+.no-glow:focus, .no-glow:hover {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Remove o efeito de foco no botão */
+.btn-outline-primary.no-glow:focus, .btn-outline-primary.no-glow:hover {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Remove o efeito de foco no input group */
+.input-group:focus-within {
+    box-shadow: none !important;
+}
+
+/* Estilo do grupo de entrada (input group) */
+.input-group {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    width: 100%; /* Faz o grupo ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Define o estilo para o campo de pesquisa */
+input[type="search"] {
+    flex: 1; /* Faz o campo de pesquisa ocupar o espaço disponível */
+    background-color: #58867e; /* Define a cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50px 0 0 50px; /* Arredonda apenas o lado esquerdo */
+    padding: 10px 15px; /* Adiciona espaçamento interno */
+    font-size: 14px; /* Define o tamanho da fonte */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Estilo para o botão */
+button[type="submit"] {
+    background-color: #58867e; /* Mesma cor de fundo do campo de pesquisa */
+    border: none; /* Remove a borda */
+    border-radius: 0 50px 50px 0 !important; /* Arredonda apenas o lado direito */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    color: #ffffff; /* Cor do texto */
+    font-size: 14px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+    display: flex; /* Usa flexbox para centralizar o conteúdo do botão */
+    align-items: center; /* Centraliza verticalmente o ícone ou texto */
+    justify-content: center; /* Centraliza horizontalmente o ícone ou texto */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover no botão */
+button[type="submit"]:hover {
+    background-color: #43726a; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o ícone dentro do botão */
+button[type="submit"] i {
+    font-size: 18px; /* Define o tamanho do ícone */
+    color: #ffffff; /* Cor do ícone */
+}
+
+/* Remove o 'X' de cancelamento em navegadores baseados em WebKit */
+input[type="search"]::-webkit-search-cancel-button {
+    display: none; /* Oculta o botão de cancelamento */
+}
+
+/* Remove o 'X' de cancelamento no Firefox */
+input[type="search"]::-moz-search-cancel-button {
+    display: none; /* Oculta o botão de cancelamento */
+}
+
+/* Estilo do placeholder para navegadores modernos */
+input[type="search"]::placeholder {
+    color: #ffffff; /* Define o texto do placeholder como branco */
+    opacity: 1; /* Garante que o texto esteja totalmente visível */
+}
+
+/* Compatibilidade com navegadores mais antigos */
+input[type="search"]::-webkit-input-placeholder {
+    color: #ffffff; /* Branco para navegadores baseados em WebKit */
+}
+
+input[type="search"]:-moz-placeholder {
+    color: #ffffff; /* Branco para Firefox mais antigo */
+}
+
+input[type="search"]::-moz-placeholder {
+    color: #ffffff; /* Branco para Firefox */
+}
+
+input[type="search"]:-ms-input-placeholder {
+    color: #ffffff; /* Branco para Internet Explorer */
+}
+
+
+/*------------------------------------------HOME.PHP-----------------------------------------------------------*/
+/*----------------------------------------SEÇÃO BEM-VINDO-------------------------------------------------------*/
+#bem-vindo {
+    margin-bottom: 85px; /* Espaçamento abaixo da seção "Bem-vindo" */
+}
+
+/* Estilo para a seção "Bem-vindo" */
+#bem-vindo h1 {
+    color: #58867e !important;
+    margin-left: -100px; /* Afastando o título da borda esquerda */
+    padding-left: 18px; /* Espaço interno no título */
+    font-size: 34px;
+    margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+}
+
+/* Estilo para a imagem */
+#bem-vindo img {
+    margin-left: -90px;
+    margin-top: 18px; /* Ajusta o espaçamento da imagem para baixo */
+    border-radius: 25px; /* Bordas arredondadas na imagem */
+    width: 802.2px; /* Largura fixa */
+    height: 381.7px; /* Altura fixa */
+}
+
+
+/* Contêiner que envolve a imagem e o quadrado colorido */
+#bem-vindo .bem-vindo-container {
+    display: flex; /* Flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Garante o máximo de espaço entre os elementos */
+    gap: 15px; /* Ajuste o espaçamento entre a imagem e o quadrado colorido */
+    position: relative; /* Para posicionar o quadrado colorido em relação a este contêiner */
+}
+
+/* Estilo para o quadrado colorido */
+.quadrado-colorido {
+    width: 445.8px; /* Largura igual à da imagem */
+    height: 381.7px; /* Altura igual à da imagem */
+    background-color: #43726a; /* Cor do quadrado */
+    display: flex; /* Para centrar o conteúdo dentro do quadrado */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: flex-start; /* Alinha o conteúdo verticalmente no centro */
+    border-radius: 25px; /* Bordas arredondadas */
+    position: absolute; /* Faz o quadrado se posicionar de forma absoluta */
+    right: -90px; /* Coloca o quadrado no canto direito */
+    top: 20px; /* Ajuste a distância do topo para mover o quadrado para baixo */
+    flex-direction: column; /* Alinha os itens na vertical */
+    padding: 10px; /* Adiciona um pouco de espaçamento dentro do quadrado */
+}
+
+/* Estilo para a imagem dentro do quadrado (ícone) */
+.quadrado-colorido img {
+    position: absolute; /* Permite o posicionamento em relação ao contêiner */
+    top: 10px !important;  /* Ajuste a distância do topo */
+    left: 100px !important; /* Ajuste a distância da esquerda */
+    width: 90px !important; /* Tamanho da imagem */
+    height: 90px !important; /* Tamanho da imagem */
+}
+
+/* Estilo para o título (h2) */
+.quadrado-colorido h2 {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 10px; /* Adiciona espaçamento da borda esquerda */
+    margin-top: 110px; /* Espaçamento entre a imagem e o título */
+}
+
+/* Estilo para o parágrafo (p) */
+.quadrado-colorido p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 10px; /* Adiciona espaçamento da borda esquerda */
+    margin-top: 10px; /* Espaçamento entre o título e o parágrafo */
+}
+
+/*----------------------------------------SESSÃO EXPLICAÇÃO-------------------------------------------------------*/
+/* Aumenta a altura do fundo da seção */
+.fundo-section {
+    background-color: #43726a !important; /* Define uma cor de fundo verde escuro */
+    color: #ffffff !important; /* Define o texto como branco */
+    display: flex !important; /* Habilita o Flexbox para organizar o conteúdo */
+    flex-direction: column !important; /* Alinha os elementos verticalmente */
+    align-items: center !important; /* Centraliza os elementos horizontalmente */
+    margin: 0 !important; /* Remove margens externas */
+    padding: 0 !important; /* Remove preenchimento interno */
+    text-align: center !important; /* Centraliza o texto */
+    min-height: 90vh !important; /* Define uma altura mínima para a seção */
+    width: 101.2vw !important; /* Garantir que a seção ocupe toda a largura da tela */
+    position: relative;
+    left: -150px; /* Move o fundo para o lado esquerdo */
+}
+
+/* Define um limite de largura para o conteúdo interno da seção */
+.fundo-div {
+    max-width: 1000px !important; /* Limita a largura a 1000px */
+}
+
+/* Estilo para o título h2 dentro da seção */
+.fundo-section h2 {
+    margin-top: 40px !important; /* Adiciona espaço acima do título */
+}
+
+/* Estilo para o título h5 dentro da fundo-section */
+.cards-section h5 {
+    font-size: 18px !important; /* Define o tamanho da fonte */
+    color: #4f706b !important; /* Define uma cor esverdeada para o texto */
+    margin-bottom: 10px !important; /* Adiciona espaço abaixo do título */
+}
+
+/* Estilo para os parágrafos dentro da explicacao-section */
+.cards-section p {
+    font-size: 13px !important; /* Define o tamanho da fonte */
+    color: #58867e !important; /* Define uma cor esverdeada para o texto */
+    margin-top: 10px !important; /* Adiciona espaço acima do parágrafo */
+    line-height: 1.6 !important; /* Define a altura da linha para melhorar a legibilidade */
+    margin-right: auto; /* Centraliza o parágrafo sem o uso de text-align */
+
+
+}
+
+/* Estilo para a área dos cards */
+.cards-section {
+    display: flex !important; /* Ativa o Flexbox para organizar os cards */
+    justify-content: space-between !important; /* Distribui os cards igualmente */
+    gap: 50px !important; /* Adiciona espaçamento entre os cards */
+    margin-top: 80px !important; /* Adiciona espaço acima da área dos cards */
+    width: 100% !important; /* Ocupa toda a largura do elemento pai */
+}
+
+/* Estilo individual para cada card */
+.card {
+    background-color: #ffffff; /* Define a cor de fundo branca */
+    border: 1px solid #ffffff; /* Adiciona uma borda branca */
+    border-radius: 50px !important; /* Arredonda os cantos do card */
+    padding: 28px; /* Adiciona preenchimento interno */
+    width: 35%; /* Cada card ocupa 35% da largura da área dos cards */
+    box-shadow: 0 4px 6px #2d4944a4; /* Adiciona sombra ao redor do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    display: flex; /* Ativa o Flexbox no card */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Espaça os elementos dentro do card */
+}
+
+/* Estilo para o container dos três pontinhos no card */
+.card .dots {
+    margin-top: auto; /* Empurra os três pontinhos para o final do card */
+}
+
+/* Estilo para a imagem redonda no topo do card */
+.card-img {
+    width: 70px !important; /* Define a largura da imagem */
+    height: 70px !important; /* Define a altura da imagem */
+    border-radius: 90% !important; /* Faz a imagem ficar completamente redonda */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    margin-top: -60px; /* Move a imagem para cima, saindo do card */
+    margin-bottom: 30px; /* Adiciona espaço abaixo da imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/*----------------------------------------FINALIZAÇÃO DO SITE-------------------------------------------------------*/
+/* Estilo para a seção "finalização" */
+#finalizacao {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 45vh; /* Ajuste a altura da seção */
+    background-color: #ffffff; /* Cor de fundo */
+    font-family: 'Comfortaa', sans-serif; /* Fonte personalizada */
+    border-top: 1px solid #ddd; /* Linha superior para separar */
+}
+
+/* Estilo para a imagem dentro da div */
+#finalizacao .finalizacao-div img {
+    width: 130px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 5px; /* Move a imagem para cima */
+    border-radius: 50%; /* Caso queira bordas arredondadas */
+}
+
+/* Estilo dos links na seção de finalização */
+#finalizacao .finalizacao-links {
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 30px; /* Espaçamento entre os links */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+#finalizacao .footer-link {
+    color: #58867e; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: color 0.3s; /* Animação suave ao passar o mouse */
+}
+
+#finalizacao .footer-link:hover {
+    color: #244943; /* Cor ao passar o mouse */
+}
+
+/* Estilo dos créditos */
+#finalizacao .finalizacao-credito {
+    color: #58867e; /* Cor do texto dos créditos */
+    font-size: 12px; /* Tamanho menor para os créditos */
+    margin-top: 10px; /* Espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+/*--------------------------------CONFIGURAÇÃO PHP - BANCO DE DADOS--------------------------------------------*/
+/*--------------------------------------TEXTOS E TÍTULOS-------------------------------------------------*/
+/* Estilo padrão para os títulos das páginas */
+.titulo-pagina {
+    font-size: 40px; /* Tamanho da fonte */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    color: #58867e; /* Cor principal do título */
+}
+
+/* Mensagem para resultados encontrados */
+.mensagem-resultado {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 20px; /* Espaço inferior */
+    font-size: 16px; /* Tamanho de fonte */
+}
+
+.mensagem-resultado.encontrados {
+    color: #43726a; /* Cor azul para mensagens positivas */
+}
+
+.mensagem-resultado.nao-encontrados {
+    color: #ff5757; /* Cor vermelha para mensagens de erro */
+}
+
+
+
+/*----------------------------------------TABELAS-------------------------------------------------------*/
+/* Estilo geral da tabela */
+table {
+    margin-top: 40px !important; /* Adiciona espaçamento acima da tabela */
+    width: 100% !important; /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: separate !important; /* Garante que as bordas sejam separadas */
+    border-spacing: 4px !important; /* Ajuste o espaçamento entre as células */
+}
+
+/* Estilo para o cabeçalho da tabela */
+table th {
+    background-color: #3c665f !important; /* Cor de fundo do cabeçalho */
+    color: #fff !important; /* Cor do texto */
+    padding: 9px !important; /* Espaçamento interno */
+    border: 1px solid #ffffff !important; /* Adiciona borda às células */
+    font-family: 'Comfortaa', sans-serif !important; /* Fonte da tabela */
+    font-size: 17px !important; /* Tamanho da fonte */
+    border-radius: 10px !important; /* Arredonda as bordas */
+    text-align: center !important; /* Centraliza o texto horizontalmente */
+    vertical-align: middle !important; /* Centraliza o texto verticalmente */
+}
+
+/* Estilo para as células da tabela */
+table td {
+    background-color: #58867e !important; /* Cor de fundo das células */
+    text-align: center !important; /* Centraliza o texto */
+    vertical-align: middle !important; /* Centraliza o texto verticalmente */
+    padding:6.3px !important; /* Espaçamento interno */
+    border: 1px solid #ffffff !important; /* Adiciona borda às células */
+    color: #ffffff !important; /* Cor do texto */
+    font-size: 13.5px !important; /* Tamanho da fonte */
+    border-radius: 10px !important; /* Arredonda as bordas */
+}
+
+/* Efeito de hover nas linhas da tabela */
+table tr:hover {
+    background-color: #70a295 !important; /* Cor ao passar o mouse */
+    transition: background-color 0.2s ease !important; /* Transição suave */
+}
+
+/* Estilo para a primeira coluna a partir da segunda linha */
+table tr:nth-child(n+2) td:nth-child(1) {
+    background-color: #407068 !important; /* Cor de fundo personalizada */
+}
+
+
+/* Estilo para os botões */
+button.btn {
+    font-family: 'Comfortaa', sans-serif !important; /* Fonte do botão */
+    font-size: 10.5px !important; /* Tamanho da fonte */
+    cursor: pointer !important; /* Mostra o cursor de ponteiro */
+    transition: background-color 0.3s ease !important; /* Transição suave */
+    border: none !important; /* Remove a borda */
+    width: 65px !important; /* Garante que o botão tenha largura automática */
+    height: 25px !important; /* Garante altura ajustável */
+    border-radius: 50px !important; /* Adiciona bordas arredondadas */
+
+}
+
+/* Botão de edição */
+button.btn-success {
+    background-color: #ffffff !important; /* Verde para "Editar" */
+    color: #43726a !important; /* Texto branco */
+}
+
+button.btn-success:hover {
+    background-color: #1d4640 !important; /* Verde mais escuro ao passar o mouse */
+    color: #ffffff !important;
+}
+
+/* Botão de exclusão */
+button.btn-danger {
+    background-color: #ffffff !important; /* Vermelho para "Excluir" */
+    color: #ff5757 !important; /* Texto branco */
+}
+
+button.btn-danger:hover {
+    background-color: #d32f2f !important; /* Vermelho mais escuro ao passar o mouse */
+    color: #ffffff !important;
+}
+
