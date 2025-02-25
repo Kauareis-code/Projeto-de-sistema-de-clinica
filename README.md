@@ -99,7 +99,7 @@ O sistema utiliza PHP para o backend e um banco de dados relacional para armazen
 <br>
 
 <h3 id="-contato">📞 Contato</h3>
-<p>📧 Email: <a href="mailto:kauareisgarcia0@gmail.com">kauareisgarcia0@gmail.com </a> 
+<p>📧 Email: <a href="mailto:contato.kauadev@gmail.com">contato.kauadev@gmail.com </a> 
 <br> 🔗 LinkedIn: <a href="https://www.linkedin.com/in/kau%C3%A3dosreisgarcia/">Kauã dos Reis Garcia</a></p>
 
 
